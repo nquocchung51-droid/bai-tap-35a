@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bài tập 35a - Form đăng ký</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body>
+<main class="page">
+<section class="card">
+<div class="logo">TS</div>
+<p class="eyebrow">TECHSTORE ACCOUNT</p>
+<h1>Tạo tài khoản</h1>
+<p class="intro">Đăng ký để trải nghiệm dịch vụ của chúng tôi.</p>
+<form id="register-form" novalidate>
+<div class="field"><label for="name">Họ và tên</label><input id="name" type="text" autocomplete="name" placeholder="Nguyễn Văn A" maxlength="80"><small id="name-error" class="field-error"></small></div>
+<div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="email" placeholder="ban@example.com" maxlength="254"><small id="email-error" class="field-error"></small></div>
+<div class="field"><label for="password">Mật khẩu</label><input id="password" type="password" autocomplete="new-password" placeholder="Ít nhất 8 ký tự" maxlength="128"><small class="hint">Có chữ hoa, chữ thường và ít nhất một chữ số.</small><small id="password-error" class="field-error"></small></div>
+<label class="terms"><input id="terms" type="checkbox"><span>Tôi đồng ý với điều khoản sử dụng.</span></label>
+<small id="terms-error" class="field-error"></small>
+<button type="submit">Đăng ký tài khoản</button>
+<p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+</form>
+<p class="privacy">Bản thực hành chỉ lưu họ tên và email trên trình duyệt. Mật khẩu không được lưu vào LocalStorage.</p>
+</section>
+</main>
+</body>
+</html>
